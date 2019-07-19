@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Hello World!</title>
+
+	<style>
+		*{
+			font-family: sans-serif;
+		}
+		.control {
+			/* border:1px solid red; */
+
+			display: flex;
+		}
+
+		.control>div {
+			flex: 8;
+		}
+
+		.control .rol {
+			display: flex;
+			padding: 5px;
+
+		}
+
+		.control .rol>* {
+			padding: 0 10px;
+			height: 36px;
+			box-sizing: border-box;
+			outline: none;
+		}
+
+		.control .rol>*:nth-child(1) {
+			border-radius: 5px 0 0 5px;
+			background: rgb(247, 247, 247);
+			border: 1px solid rgb(211, 211, 211);
+		}
+
+		.control .rol>*:nth-child(2) {
+			border-radius: 0 5px 5px 0;
+			background: rgb(247, 247, 247);
+			border: 1px solid rgb(211, 211, 211);
+
+		}
+
+		.type,
+		.file-but {
+			flex: 1;
+
+		}
+
+		.rol>input {
+			flex: 8;
+		}
+
+		.find-btn,
+		.setting {
+			margin: 5px;
+			flex: 1;
+			border: none;
+			outline: none;
+			background: #31a8ff;
+			font-size: 30px;
+			color: white;
+			border-radius: 2px
+		}
+
+		.result {
+			display:flex;
+			flex-direction: column;
+			width: 100%;
+			height: 400px;
+
+		}
+
+		.title {
+			display: flex;
+			
+			margin:10px 10px 0;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			border: 1px solid rgb(211, 211, 211);
+			border-radius:5px 5px 0 0;
+
+		}
+
+		.title span {
+			box-sizing: border-box;
+
+			 
+		}
+
+	
+
+		.id {
+			flex: 1;
+		}
+
+		.name {
+			flex: 3;
+		}
+
+		.location {
+			flex: 3;
+		}
+
+		.operating {
+			flex: 1;
+		}
+
+		.content {
+			border: 1px solid rgb(211, 211, 211);
+			 
+	 
+			margin:0 10px 0;
+		
+
+		}
+
+		.content .item {
+			display: flex;
+			margin: 13px;
+			
+			height: 36px;
+			line-height: 40px;
+			text-align: center; 
+
+		 
+		}
+		.item :first-child {
+			border-radius: 5px 0 0 5px;
+		}
+
+		.item :last-child {
+			border-radius: 0 5px 5px 0;
+		}
+
+		.item span{
+			border: 1px solid rgb(211, 211, 211);
+
+		}
+
+
+		.item .operating{
+			border: 1px solid rgb(211, 211, 211);
+			background: #31a8ff;
+			font-size:20px;
+			line-height: 100%;
+			color:white;
+		}
+		 
+	</style>
+</head>
+
+<body>
+	<div class="control">
+		<div>
+			<div class="rol">
+				<select name="" id="" class="type">
+					<option value="">文件名</option>
+					<option value="">内容</option>
+				</select>
+				<input type="text">
+			</div>
+			<div class="rol">
+				<input type="text">
+				<button class="file-but">...</button>
+			</div>
+		</div>
+		<button class='find-btn'>Find</button>
+		<button class="setting">⚙</button>
+	</div>
+
+	<div class="result">
+ 
+			<div class="title">
+				<span class="id">id</span>
+				<span class="name">name</span>
+				<span class="location">location</span>
+				<span class="operating">operating</span>
+			</div>
+			
+			<div class="content">
+				<div class="item">
+					
+					<span class="id">1</span>
+					<span class="name">index.html</span>
+					<span class="location">D:/sdijf/sdjf</span>
+			 
+						<button class="operating">open</button>
+					 
+				</div>
+				<div class="item">
+					
+					<span class="id">id</span>
+					<span class="name">name</span>
+					<span class="location">location</span>
+					<button class="operating">open</button>
+				</div>
+	 
+		</div>
+
+	</div>
+
+</body>
+
+</html>
